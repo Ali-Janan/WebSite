@@ -1,0 +1,298 @@
+/* RESET - Enlever les styles par défaut des navigateurs
+=================================================================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Mettre Box Sizing "border-box" par défaut */
+
+
+
+
+
+/* ----------------------------------------*/
+
+a {
+color: blue;
+  text-decoration: none;
+  outline: none;
+  transition: color .3s ease; 
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+
+/* class collection------------------------------------------*/
+
+.Bold, B {
+font-weight: 2em;
+}
+
+@media (max-width: 800px) {
+
+
+
+
+}
+
+
+
+
+/* start my code from here ------------------------------------*/
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  margin: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  font-family: roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: F2F6FA;
+  letter-spacing: 0;
+  word-spacing: 0.01;
+  background-color: white;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  height: 75px;
+  list-style: none;
+  margin: 0 auto;
+ padding: 10px;
+ text-align: center;
+ border-bottom: 5px gray solid;
+ 
+
+}
+/*   -------------------------*/
+
+a {
+ color: black;
+ text-decoration: none;
+ 
+ transition: color .5s ease, background 1s ease, border-radius .5s ease;
+}
+
+#header a:hover {
+  color: red; /* links color on hover */
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  
+}
+.search {
+  display: flex;
+  justify-content: center;
+
+}
+.icon-basket {
+  display: flex;
+  position: relative;
+  height: 33px;
+    
+}
+.icon-basket::before {
+  content: "\e907";
+}
+
+.topnav {
+  contain: " ";
+  *width: 10px;
+  *height: 7px;
+  *background: #25d366;
+  *border-left: 10px;
+  *margin: 10px;
+  word-spacing: 5px;
+  padding: 3em;
+}
+
+#footer{
+  
+  text-align: center;
+  background-color: #eee;
+  padding-top: 50px;
+
+  
+}
+.icon-facebook::before {
+  content: "\e901";
+  color: #3b5998;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+
+
+.icon-whats::before {
+  content: "\e904";
+  color: #25d366;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+
+.icon-instagram::before {
+  content: "\e900";
+  color: #e4405f;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+
+.icon-twitter::before {
+  content: "\e903";
+  color: #1da1f2;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+
+.icon-email::before {
+  content: "\e902";
+  color: #d14836;
+  margin: 5px;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.left-column {
+  width: 20%;
+  height: 100%;
+}
+.opining {
+  background-color: #E0E0E0;
+  padding: 1em;
+  border: red;
+  
+}
+/*-----------------------*/
+.middle-column {
+  margin-left: 50px;
+  width: 50%;
+  background-color: white;
+}
+.clearfix {
+  clear: both;
+}
+.float-title {
+  float: left;
+}
+.float-img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+  float: right;
+  width: 400px;
+}
+
+.address {
+background-color: #E0E0E0;
+border: 10;
+position: relative;
+justify-content: center;
+padding-left: 20px;
+padding-bottom: 15px;
+}
+/*-----------------------*/
+.right-column {
+  width: 20%;
+  text-emphasis: margine;
+  margin-left: 80px;
+}
+
+.catagory {
+  background-color: #E0E0E0;
+  text-align: left;
+  padding: 40px;
+  margin: 2em;
+}
+a {
+  color: black;
+  text-decoration: none;
+  transition: color .5s ease, background 0.5s ease, border-radius .5s ease;
+ }
+ 
+.catagory a:hover {
+   color: red; 
+   background-color: #E0E0E0;
+   
+ }
+
+
+.content {
+  width: 80%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* what luca did */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#name {
+  text-align: center;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+ 
+
+.logo {
+  display: block;
+  align-self: flex-start;
+}
+
+.supermarkt {
+background: url(./image/super.jpg) ;
+background-size: cover;
+width: 100%;
+height: 300px;
+border-radius: 2px;
+
+border-bottom: 5px #eee solid;
+}
+
+.album {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+
+}
+.album img {
+  width: 22%;
+  height: 200px;
+  margin-bottom: 1em;
+  border-color: #e4405f;
+  border-image-width: 2em;
+}
+.album a:hover {
+  transform: scale(2);
+}
