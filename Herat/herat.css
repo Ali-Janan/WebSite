@@ -17,10 +17,15 @@
   text-decoration: none;
   color: inherit;
   outline: none;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }
+  
+  
   a:hover {
   color: #5d79ea;
+  border-bottom-color: transparent;
   }
+  
 
   /* Conversion display images pour éliminer les espaces autour */
   img {
@@ -36,14 +41,14 @@
   select,
   textarea {
     font-family: 'roboto', sans-serif;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.025em;
     line-height: 1.75em;
-    color: #7c8081;
+    color: black;
     word-spacing: 0.1em;
+    letter-spacing: 0.025;
   }
-
   /* TITRES
   ----------------------------------------------*/
   h1,
@@ -72,25 +77,15 @@
     font-size: 1.1em;
     font-weight: 400;
   }
-
+  .pdall {
+    padding: 0 20px;
+  }
   /* PARAGRAPHES
   ----------------------------------------------*/
   p {
     margin-bottom: 2em;
   }
 
-  /* LIENS
-  -------------------li a list and a link---------------------------*/
-  li a {
-    text-decoration: none;
-    outline: none;
-    color: inherit; /*#3fb1a3*/
-    *border-bottom: dotted 1px;
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  }
-  li a:hover {
-    border-bottom-color: transparent;
-  }
   /* BOLD
   ----------------------------------------------*/
   strong, b {
@@ -117,18 +112,9 @@
     color:#ccc;
   }
 
+  
 
-
-
-
-  .selection {
-    outline: #1da1f2;
-    cursor: -moz-grab;
-    color: #1da1f2;
-    background: #7c8081;
-  }
-
-  .ul {
+  ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -136,39 +122,6 @@
   /*---------------------------------------------*/
   /*---------------------------------------------*/
   /*---------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-  html {
-    font-size: 16px;
-    box-sizing: border-box;
-    *margin: 50px;
-  }
-
-  /*  ---------------Body---------------------*/
-
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.5;
-    color: black;
-    letter-spacing: 0.025;
-    word-spacing: 0.01;
-    background-color: white;
-    *margin: 10px;
-    
-  }
 
   /*  ---------------header---------------------*/
   .header {
@@ -182,10 +135,10 @@
     height: 100px;
     list-style: none;
     margin: 0 auto;
-  text-align: left;
-  background-image: url(./image/bbbbbb.jpg);
-  color: black;
-  box-shadow: 5px 5px 50px 5px white;
+    *text-align: left;
+    background-image: url(./image/bbbbbb.jpg);
+    color: black;
+    box-shadow: 5px 5px 50px 5px white;
   }
   .logo {
     min-width: 120px;
@@ -208,16 +161,17 @@
   }
   .topnav {
     min-width: 400px;
-    word-spacing: 2px;
-    font-size: 20px;
-    
+    *word-spacing: 2px;
+    *font-size: 20px;
+    display: flex;
+    flex-flow: row;
   }
   .topnav a:hover {
     color: white;
     background-color: gray;
-    font-size: 21px; 
+    font-size: 19px; 
     border-radius: 5px;
-    padding: 5px 5px; 
+    *padding: 5px 5px; 
   }
   /*   ----------supermarket---------------*/
   .background {
@@ -229,42 +183,34 @@
     background-image: url('./image/aaaaaa.jpg')
   }
 
-    
-    
-    
-
     /*   ----------three columns---------------*/
   .columns {
-    padding: 30px 30px;
+    *padding: 30px 30px;
     *margin: 20px 20px;
     border-top: 5px blue solid;
     min-width: 800px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    *column-gap: 100px;
-    *margin: 22px 5px;
-    height: 1000px;
     background-color: #ccc;
     border-bottom: 5px red solid;
 
   }
   .left-column {
-    min-width: 500px;
+    min-width: 300px;
     *background-color: #eee;
     
   
   }
   .meat1 {
-    width: 100%;
+    width: 90%;
     min-width: 800px;
     *height: 10px;
     border-radius: 10px;
   }
 
   .right-column {
-    min-width: 300px;
-    *text-emphasis: margine;
+    min-width: 500px;
     border-left: 2px #eee solid;
     padding: 10px;
     margin: 30px;
@@ -274,6 +220,7 @@
     *padding: 40px;
     margin: 10px;
     border-bottom: 2px #eee solid;
+
     
   }
   .opining {
@@ -289,15 +236,12 @@
     justify-content: center;
     }
 
-  a {
-    color: black;
-    text-decoration: none;
-    transition: color .5s ease, background 0.5s ease, border-radius .5s ease;
-  }
+  
   
   .catagory a:hover {
     color: red; 
     background-color: #E0E0E0;
+    display: block;
   }
   /*   ----------album---------------*/
   .album {
@@ -323,18 +267,16 @@
     border: 1px gray solid;
     border-radius: 10px;
   }
-  .album a:hover {
-    transform: scale(2);
+  .album img:hover {
+    transform: scale(1.2);
   }
-
-
-
-
+.first-item {
+font-size: 30px;
+}
 
 
   /*  ---------------footer---------------------*/
   #footer{
-    
     border-top: 3px gray solid;
     background-image: url(./image/bbbbbb.jpg);
     padding-top: 50px;
@@ -342,12 +284,12 @@
 
   }
   .media-icon {
-
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
+    height: 60px;
   }
   .text {
     text-align: center;
@@ -355,6 +297,9 @@
 
   footer span {
     font-size: 30px;
+  }
+  .icon-wrap {
+    width: 30px;
   }
 
   .icon-facebook::before {
@@ -391,32 +336,14 @@
   .icon-Email::before {
     content: "\e902";
     color: #d14836;
+    font-size: 30px;
     
   }
-  
-
   .icon-Email:hover {
     font-size: 40px;
   }
-  
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
+ 
   /*
   body * {
     border: 1px solid green;
