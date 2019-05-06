@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?p03k66');
-  src:  url('fonts/icomoon.eot?p03k66#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?p03k66') format('truetype'),
-    url('fonts/icomoon.woff?p03k66') format('woff'),
-    url('fonts/icomoon.svg?p03k66#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?p3pmk3');
+  src:  url('fonts/icomoon.eot?p3pmk3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p3pmk3') format('truetype'),
+    url('fonts/icomoon.woff?p3pmk3') format('woff'),
+    url('fonts/icomoon.svg?p3pmk3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-whatsapp2:before {
-  content: "\e905";
+.icon-shopping-basket:before {
+  content: "\e909";
 }
 .icon-whatsapp1:before {
   content: "\e904";
@@ -46,9 +46,6 @@
 .icon-facebook1:before {
   content: "\e901";
   color: #3b5998;
-}
-.icon-shopping-cart:before {
-  content: "\e907";
 }
 .icon-menu:before {
   content: "\e906";
