@@ -39,3 +39,26 @@ function searchFunction() {
     
   }
 }
+
+function addToBasket (event) {
+  console.log("hello", event);
+}
+
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function (event) {
+  addToBasket(event);
+});
+
+
+const menuElement = document.querySelector('.menu-icon');
+const topNavElement = document.querySelector('.top-nav');
+menuElement.addEventListener('click', function(e) {
+  console.log("menu click", e);
+  menuElement.classList.toggle('opened');
+  topNavElement.classList.toggle('opened');
+});
+
+
+
