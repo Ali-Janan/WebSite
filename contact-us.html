@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>contact us</title>
+  <title>Herat Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/jpg" href="./image/logo2.png" />
-  <link rel="stylesheet" href="herat.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../icomoon/style.css">
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="./asset/css/index.css">
+  <!--Google fonts  -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Icomoon Link -->
+  <link rel="stylesheet" href="./asset/icomoon/style.css">
+  <!-- faveicon -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./asset/image/panda.png" />
+  <link rel="stylesheet" href="./asset/css/index.css">
 
   <style>
     /* Style inputs with type="text", select elements and textareas */
@@ -19,7 +24,7 @@
     textarea {
       width: 100%;
       /* Full width */
-      padding: 12px;
+      *padding: 12px;
       /* Some padding */
       border: 1px solid #ccc;
       /* Gray border */
@@ -33,7 +38,7 @@
       /* Bottom margin */
       resize: vertical
         /* Allow the user to vertically resize the textarea (not horizontally) */
-
+        
     }
 
     /* Style the submit button with a specific background color etc */
@@ -56,96 +61,111 @@
       border-radius: 5px;
       background-color: #f2f2f2;
       padding: 20px;
-      *width: 50%;
-      *padding-top: 10px;
+      width: 80%;
+      padding-top: 100px;
+      
     }
 
     .box {
-      width: 60%;
+      *width: 70%;
       margin: 0 auto;
+      margin-left: 400px;
+      
     }
   </style>
-
-
-
 </head>
-
-
-<!------------------------ body----------------->
+<!--------------------------------Body----------------------------------------------->
 
 <body>
-  <!------------------Header------------------->
-  <header class="header">
-    <div class="logo">
-      <img src="./image/logo.jpg" alt="logo" height="75px">
+  <div class="grid-container">
+    <!-----------HEADER-------------------->
+    <div class="header">
+      <div class="logo">
+        <img src="./asset/image/panda.png" alt="logo" width="65">
+      </div>
+
+      <div class="icon-bas">
+        <a href="basket.html">
+          <span class="icon-basket"></span>
+        </a>
+      </div>
+      <!-- The form -->
+      <div class="search">
+        <input class="box" id="myInput" onkeyup="searchFunction()" type="text" placeholder=" Search.." name="search">
+      </div>
+
+      <!--icon for mobile in responsive-->
+      <div class="icon">
+        <div class="menu-icon menu-icon-4">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <div class="wrap"><a href="./contact-us.html">Contact Us</a></div>
+        <div class="wrap"><a href="./about.html">About</a></div>
+        <div class="wrap"><a href="./shops.html">Shops</a></div>
+        <div class="wrap"><a href="index.html">Home </a></div>
+      </nav>
+
+    </div>
+    <!---------------HEADER END--------------->
+    <section class="box">
+      <hr>
+      <hr>
+
+      <div class="container">
+        <form action="action_page.php">
+          <h1>Please contact us if you have any thing in your mind!</h1>
+          <p>We will be very happy to make our things better and your idea for sure make us improve.No question is
+            stupid
+          </p>
+          <label for="fname">Name</label>
+          <input type="text" name="name" placeholder="Your name..">
+          
+          <label for="eaddress">Email address</label>
+          <input type="text" name="email address" placeholder="Your email address..">
+
+          <label for="lname">Subject</label>
+          <input type="text" name="subject" placeholder="About what..">
+          
+
+          <label for="subject">Comment</label>
+          <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+          <br>
+
+
+        </form>
+      </div>
+
+    </section>
+
+    <!--------------------------Footer------------------------------------->
+    <div class="footer">
+
+      <div class="media-icon">
+        <div class="icon-wrap"><a href="https://www.facebook.com/"><i class="icon-facebook icon"></i></a></div>
+        <div class="icon-wrap"><a href="https://www.whatsapp.com/"><i class="icon-whatsApp icon"></i></a></div>
+        <div class="icon-wrap"><a href="https://www.instagram.com/"><i class="icon-instagram icon"></i></a></div>
+        <div class="icon-wrap"><a href="https://twitter.com/login?lang=en"><i class="icon-twitter icon"></i></a></div>
+        <div class="icon-wrap"><a href="https://accounts.google.com"><i class="icon-Email icon"></i></a></div>
+      </div>
+
+      <div class="ft-text">
+        <h4>Thanks for visiting our website! For positive idea we will be glad</h4>
+        <p>&copy;2019 by Ali Janan | All right reserved</p>
+      </div>
     </div>
 
-    <div class="icon-basket">
-    </div>
-    <!-- The form -->
-    <div class="search">
-      <form class="example" action="action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-    <li class="topnav">
-      <a href="longin">Longin</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">| About us</a>
-      <a href="#about">| Our shopes</a>
-      <a href="#home">| Home</a>
-    </li>
-  </header>
-  <!------------------Header End------------------>
 
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <!------------------------ box----------------->
-  <section class="box">
-    <hr>
-    <hr>
+  </div>
+  <!--GRID CONTAINER END-->
+  <!-------------------------------JAVASCRIPT START--------------------------------------->
+  <script src="./asset/js/index.js"></script>
+  <!-------------------------------JAVASRICPT END----------------------------------------->
+</body>
 
-    <div class="container">
-      <form action="action_page.php">
-        <h1>Please contact us if you have any thing in your mind!</h1>
-        <p>We will be very happy to make our things better and your idea for sure make us improve.No question is stupid
-        </p>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="eaddress">Email address</label>
-        <input type="text" id="e-address" name="email address" placeholder="Your email address..">
-
-        <label for="subject">Comment</label>
-        <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-        <br>
-
-
-      </form>
-    </div>
-
-  </section>
-
-  <!-----------------footer-------------------->
-
-  <footer id="footer">
-    <div class="media-icon">
-      <div class="icon-wrap"> <a href="https://www.facebook.com/"><i class="icon-facebook"></i></a></div>
-      <div class="icon-wrap"> <a href="https://www.whatsapp.com/"><i class="icon-whatsApp"></i></a></div>
-      <div class="icon-wrap"> <a href="https://www.instagram.com/"><i class="icon-instagram"></i></a></div>
-      <div class="icon-wrap"><a href="https://twitter.com/login?lang=en"><i class="icon-twitter"></i></a></div>
-      <div class="icon-wrap"><a href="https://accounts.google.com"><i class="icon-Email"></i></a></div>
-    </div>
-
-
-    <div class="text">
-      <h4>Thanks for visiting our shop! Do you like it?</h4>
-      <p>&copy;2019 | All right reserved</p>
-    </div>
-  </footer>
+</html>

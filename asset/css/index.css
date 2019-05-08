@@ -141,8 +141,9 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    height: 90px;
+    height: 80px;
     background-image: linear-gradient(silver, white);
+    
     border-bottom: 1px black solid;
     border-top: 20px;
     position: fixed;
@@ -151,6 +152,8 @@
   }
   .logo {
     min-width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .icon-bas {
     min-width: 50px;
@@ -167,22 +170,30 @@
   }
   .search {
     min-width: 200px;
-    padding-top: 25px;
+    margin-top: 25px;
+  }
+  .search :hover{
+    background-color: lightgoldenrodyellow;
   }
   .box {
     border-radius: 25px;
     background-color: white;
+    
   }
   .top-nav > div {
     display: inline-block;
     padding: 5px;
     padding-right: 22px;
-    padding-top: 35px;
+    margin-top: 30px;
     font-size: 20px;
+    
   }
   .top-nav a:hover {
     color: black;
     font-weight: bold;
+    background-color: lightgray;
+    border-radius: 20px;
+    border-bottom: 1px black solid;
   }
   /*
   ----------------Header End------------------*/
@@ -231,6 +242,14 @@
     grid-area: main; 
     *background-color: aquamarine;
     margin-bottom: 30px;
+  }
+  .head-halal-text {
+    display: block;
+    background-image: linear-gradient(green, green);
+    margin: 0 60px;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
   }
   .halal-text {
     font-size: 20px;
@@ -296,9 +315,9 @@
   }
   .column-2 p {
     position: absolute;
-    bottom: -25px;
-    left: 2%;
-    font-size: 1.5em;
+    bottom: -35px;
+    left: 10%;
+    font-size: 16px;
     color: black;
   }
   
@@ -324,10 +343,10 @@
   .icon-add-to-basket {
     position: absolute;
     border-radius: 45%;
-    border-color: black;
+    border-color: lightgray;
     bottom: 220px;
     left: 71%;
-    *background-color: #25d366;
+    background-color: white;
   }
   
   .icon-add-to-basket::before {
@@ -336,6 +355,7 @@
     color: green;
     
   }
+
   /*
   ----------------item5 End------------------*/
   /*
@@ -499,4 +519,59 @@
     }
     
   }
-  
+
+  /* ----------------new responsive----------------- */
+  /* MEDIA QUERIES STYLES
+			------------------------------------*/
+		/* Breakpoint 1 - landscape tablets  */
+		@media (max-width: 1024px) {
+			#box {
+				background: #AED6F1;
+			}
+
+			#box::after {
+				content: "@media (max-width: 1024px)";
+			}
+		}
+
+		/* Breakpoint 2 - portrait tablets  */
+		@media screen and (max-width: 768px) {
+			#box {
+				background: #A569BD;
+				color: #fff;
+			}
+
+			#box::after {
+				content: "@media (max-width: 768px)";
+			}
+		}
+
+		/* Breakpoint 3 - landscape phones  */
+		@media screen and (max-width: 667px) {
+			#box {
+				background: #CB4335;
+			}
+
+			#box::after {
+				content: "@media (max-width: 667px)";
+			}
+
+			pre {
+				display: none;
+			}
+		}
+
+		/* Breakpoint 4 - portrait phones  */
+		@media screen and (max-width: 480px) {
+			body {
+				text-align: center;
+			}
+
+			#box {
+				background: #2E4053;
+			}
+
+			#box::after {
+				content: "@media (max-width: 480px)";
+			}
+		}
