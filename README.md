@@ -1,2 +1,2 @@
 # WebSite
-This is a web page 
+This is a website for Herat shop
