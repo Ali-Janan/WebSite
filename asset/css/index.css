@@ -3,10 +3,11 @@
   html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
   
   /* Mettre Box Sizing "border-box" par défaut */
-  html {
+  html , body{
     font-size: 16px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    height: 100%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -110,6 +111,7 @@
   }
   .padding {
     padding: 15px;
+    
   }
   /*
   --------------------Reset End-----------------------------*/
@@ -124,12 +126,9 @@
     'menu right right right right right'
     'footer footer footer footer footer footer';
     grid-gap: 0px;
-    *background-color: lightcoral;
     padding: 0 1px;
   }
   .grid-container > div {
-    *background-color: rgba(255, 255, 255, 0.8);
-    *padding: 10px 0;
     font-size: 16px;
   }
   /*
@@ -143,12 +142,12 @@
     justify-content: space-between;
     height: 80px;
     background-image: linear-gradient(silver, white);
-    
     border-bottom: 1px black solid;
     border-top: 20px;
     position: fixed;
     width: 100%;
     z-index: 1;
+    opacity: 0.9;
   }
   .logo {
     min-width: 100px;
@@ -574,4 +573,70 @@
 			#box::after {
 				content: "@media (max-width: 480px)";
 			}
-		}
+    }
+    
+
+     /* ----------------  SHOPS - HTML PAGE----------------- */
+
+     /* -----------header------------ */
+     #shop-header {
+      top: 0;
+      z-index: 10;
+      opacity: 0.5;
+    }
+         /* -----------banner------------ */
+    .banner-swiper {
+      height: 100%;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 90%;
+      *margin-top: 80px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      margin-top: 80px;
+    }
+    /* -----------main-content------------ */
+    .main-content {
+      *background-color: gray;
+      
+    }
+
+    .second-row {
+      *background-color: gray;
+      display: flex;
+      justify-content: space-around; 
+      *margin: 50px 50px;  
+      *margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #header-all {
+      display: block;
+      width: 100%;
+      background-color: green;
+      text-align: center;
+      *height: 50px;
+      color: white;
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    .bern {
+      *background-color: lightgray;
+      outline: 1px lightgray solid;
+      width: 30%;
+      
+    }
+    .basel {
+      *background-color: red;
+      outline: 1px lightgray solid;
+      width: 30%;
+    }
+    .zurich {
+      *background-color: blue;
+      outline: 1px lightgray solid;
+      width: 30%;
+    }
+  
