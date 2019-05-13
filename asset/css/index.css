@@ -1,4 +1,4 @@
-  /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
   --------------------------------------------------------------------------------------- */
   html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
   
@@ -88,7 +88,6 @@
   img {
     display: inline;
     display: block;
-    *width: 100%;
     height: auto;
   }
   
@@ -121,6 +120,7 @@
     display: grid;
     grid-template-areas:
     'header header header header header header'
+    'nav nav nav nav nav nav'
     'banner banner banner banner banner banner'
     'menu main main main main main'
     'menu right right right right right'
@@ -140,24 +140,27 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    height: 80px;
-    background-image: linear-gradient(silver, white);
-    border-bottom: 1px black solid;
-    border-top: 20px;
-    position: fixed;
-    width: 100%;
+    height: 45px;
+    background-color: #FFFFFF;
+    position: sticky;
     z-index: 1;
-    opacity: 0.9;
+    margin-top: 20px;
   }
   .logo {
     min-width: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
+    *margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .search {
+    min-width: 200px;
+  }
+  .search :hover{
+    *background-color: lightgoldenrodyellow;
   }
   .icon-bas {
     min-width: 50px;
     color: gray;
-    padding-top: 25px;
   }
   .icon-basket::before {
     content: "\e909";
@@ -167,35 +170,37 @@
   .icon-bas :hover {
     color: black;
   }
-  .search {
-    min-width: 200px;
-    margin-top: 25px;
+  .log {
+    font-size: 20px;
   }
-  .search :hover{
-    background-color: lightgoldenrodyellow;
+  .lan {
+    font-size: 20px;
   }
-  .box {
-    border-radius: 25px;
-    background-color: white;
-    
+ 
+  
+  /*
+  ----------------Header End------------------*/
+   /*
+  ----------------NAV------------------*/
+  .nav {
+    grid-area: nav;
+    background-color: #FFFFFF;
+    height: 34px;
   }
-  .top-nav > div {
-    display: inline-block;
-    padding: 5px;
-    padding-right: 22px;
-    margin-top: 30px;
+  .top-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
     font-size: 20px;
     
   }
   .top-nav a:hover {
     color: black;
-    font-weight: bold;
-    background-color: lightgray;
-    border-radius: 20px;
-    border-bottom: 1px black solid;
+    *background-color: lightgray;
+    *border-radius: 20px;
+    border-bottom: 5px green solid;
   }
-  /*
-  ----------------Header End------------------*/
+  
   /*
   ----------------banner---------------*/
   .banner {
@@ -639,4 +644,3 @@
       outline: 1px lightgray solid;
       width: 30%;
     }
-  
