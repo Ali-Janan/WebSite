@@ -94,7 +94,7 @@
   ----------------------------------------------*/
   /*Document selection*/
   ::selection {
-    background-color: #282e3e;
+    background-color: lightblue;
     color:#fff;
   }
   /*Form elements placeholders*/
@@ -125,8 +125,8 @@
     grid-gap: 0px;
     padding: 0 1px;
   }
-  .grid-container > div {
-    font-size: 16px;
+  .grid-container {
+    
   }
   /*
   --------------------GRID END--------------------------*/
@@ -145,7 +145,7 @@
   }
   .logo img {
     position: relative;
-    width: 5vw;
+    width: 70px;
     height: auto;
     z-index: 100;
   }
@@ -171,14 +171,26 @@
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 22px;
+    
   }
- 
+  .list {
+    
+  }
+  .list:hover {
+    border-bottom: 1px orange solid;
+  }
   .log {
-    /* font-size: 20px; */
+    
+  }
+  .log:hover {
+    border-bottom: 1px orange solid;
   }
   .lan {
-    /* font-size: 20px; */
+    
+  }
+  .lan:hover {
+    border-bottom: 1px orange solid;
   }
  
   .bottom-row {
@@ -222,8 +234,8 @@
   ----------------MENU------------------*/
   .menu {
     grid-area: menu;
-    width: 100%;
-    background-color: #F5F5F5;
+    width: 250px;
+    background-color: #F7F7F7;
     /* position: fixed;
     z-index: 1; */
   }
@@ -231,38 +243,39 @@
     border-bottom: 1px gray solid;
     display: block;
   }
-  
   .category a:hover {
-    background-color: gray;
+    background-color: #E0E0E0;
     color: black;
     display: block;
   }
-  
-  
+  #pro-head {
+    color: #4ca828;
+    /* background-color: lightgray; */
+    border-bottom: 1px lightgray solid;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0Px;
+  }
+  #pro-head:hover {
+    color: #4ca828;
+    background-color: #EEEEEE;
+    border-bottom: 1px #FEFEFE solid;
+   
+  }
   /*
   ----------------MENU END------------------*/
   /*
   ----------------MEAT------------------*/
   .meat { 
     grid-area: meat;
-    margin-bottom: 30px;
+    background-color: #F7F7F7;
+    border-bottom: 1px lightgray solid;
   }
-  .head-halal-text {
-    display: block;
-    background-color: gray;
-    margin: 0 60px;
-    color: white;
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-  .halal-text {
-    font-size: 20px;
-    text-align: justify;
-  }
-  
   .meat-banner {
     border-radius: 1%;   
   }
+  
   
   /*
   ----------------  PRODUCTS------------------*/
@@ -270,6 +283,7 @@
     grid-area: products;
     background-color: #FDE4F2;
     align-content: center;
+    border-top: 1px lightgray solid;
   }
   
   .head-text {
