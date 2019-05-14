@@ -51,7 +51,7 @@ button.addEventListener('click', function (event) {
   addToBasket(event);
 });
 
-
+/*
 const menuElement = document.querySelector('.menu-icon');
 const topNavElement = document.querySelector('.top-nav');
 menuElement.addEventListener('click', function(e) {
@@ -59,6 +59,11 @@ menuElement.addEventListener('click', function(e) {
   menuElement.classList.toggle('opened');
   topNavElement.classList.toggle('opened');
 });
+*/
 
 
+
+  $(".icon-menu").on('click', function() {
+    $(".nav").toggleClass('nav-open');
+});
 
