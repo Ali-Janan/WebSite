@@ -242,12 +242,19 @@
   .category {
     border-bottom: 1px gray solid;
     display: block;
-  }
+    font-size: 20px;
+    }
+    .space {
+      margin-bottom: 10px;
+    }
+ 
   .category a:hover {
     background-color: #E0E0E0;
     color: black;
     display: block;
+    font-size: 20px;
   }
+  
   #pro-head {
     color: #4ca828;
     /* background-color: lightgray; */
