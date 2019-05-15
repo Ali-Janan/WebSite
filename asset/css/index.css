@@ -139,6 +139,9 @@
     width: 100%;
     background-color: #FFFFFF;
     border-bottom: 1px lightgray solid;
+    position: fixed;
+    z-index: 1;
+    height: 85px;
   }
   .logo {
     width: 20%;
@@ -236,16 +239,21 @@
     grid-area: menu;
     width: 250px;
     background-color: #F7F7F7;
-    /* position: fixed;
-    z-index: 1; */
+    position: fixed;
+    z-index: 1;
+    margin-top: 85px;
   }
   .category {
     border-bottom: 1px gray solid;
     display: block;
     font-size: 20px;
+    margin-left: 1px;
+    
     }
-    .space {
-      margin-bottom: 10px;
+   .category a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
     }
  
   .category a:hover {
@@ -253,6 +261,9 @@
     color: black;
     display: block;
     font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px
+    
   }
   
   #pro-head {
@@ -270,8 +281,19 @@
     border-bottom: 1px #FEFEFE solid;
    
   }
+
+  aside.ex3 {
+    width: 240px;
+    max-height: 500px;
+    overflow: auto;
+  }
+
   /*
   ----------------MENU END------------------*/
+  .main-content {
+    margin-top: 85px;
+    margin-left: 240px;
+  }
   /*
   ----------------MEAT------------------*/
   .meat { 
