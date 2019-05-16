@@ -13,156 +13,159 @@
   <!-- Icomoon Link -->
   <link rel="stylesheet" href="./asset/icomoon/style.css">
   <!-- faveicon -->
-  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
   <link rel="shortcut icon" type="image/png" href="./asset/image/panda.png" />
-  <link rel="stylesheet" href="./asset/css/index.css">
-
-  <style>
-    /* Style inputs with type="text", select elements and textareas */
-    input[type=text],
-    select,
-    textarea {
-      width: 100%;
-      /* Full width */
-      *padding: 12px;
-      /* Some padding */
-      border: 1px solid #ccc;
-      /* Gray border */
-      border-radius: 4px;
-      /* Rounded borders */
-      box-sizing: border-box;
-      /* Make sure that padding and width stays in place */
-      margin-top: 6px;
-      /* Add a top margin */
-      margin-bottom: 16px;
-      /* Bottom margin */
-      resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
-        
-    }
-
-    /* Style the submit button with a specific background color etc */
-    input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-
-    /* Add a background color and some padding around the form */
-    .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-      width: 80%;
-      padding-top: 100px;
-      margin: 0 auto;
-    }
-
-    .box {
-      margin: 0 auto;
-    }
-  </style>
 </head>
 <!--------------------------------Body----------------------------------------------->
 
 <body>
+
   <div class="grid-container">
+
     <!-----------HEADER-------------------->
-    <div class="header">
-      <div class="logo">
-        <img src="./asset/image/panda.png" alt="logo" width="65">
-      </div>
+    <header class="header">
 
-      <div class="icon-bas">
-        <a href="basket.html">
-          <span class="icon-basket"></span>
-        </a>
-      </div>
-      <!-- The form -->
-      <div class="search">
-        <input class="box" id="myInput" onkeyup="searchFunction()" type="text" placeholder=" Search.." name="search">
-      </div>
+      <!-- TOP ROW -->
+      <section class="top-row">
+        <!-- The form -->
+        <figure class="logo">
+          <img src="./asset/image/panda.png" alt="logo">
+        </figure>
+        <!-- <div style="width: 100px"></div> -->
+        <form class="search">
+          <input class="search-frame" id="myInput" onkeyup="searchFunction()" type="text" placeholder=" Search.."
+            name="search">
+        </form>
 
-      <!--icon for mobile in responsive-->
-      <div class="icon">
-        <div class="menu-icon menu-icon-4">
-          <div class="bar bar-1"></div>
-          <div class="bar bar-2"></div>
-          <div class="bar bar-3"></div>
-        </div>
-      </div>
+        <nav class="list-container">
+          <ul>
+            <li class="list" <a href=""><span class="icon-shopping-basket"> My lists</span></a></li>
+            <li class="log" <a href=""><span class="icon-profile"> Login</span></a></li>
+            <li class="lan" <a href=""><span>EN</span></a></li>
+          </ul>
+        </nav>
+      </section>
 
-      <nav class="top-nav">
-        <div class="wrap"><a href="./contact-us.html">Contact Us</a></div>
-        <div class="wrap"><a href="./about.html">About</a></div>
-        <div class="wrap"><a href="./shops.html">Shops</a></div>
-        <div class="wrap"><a href="index.html">Home </a></div>
+      <!-- Bottom ROW -->
+      <section class="bottom-row">
+        <span class="icon-menu"></span>
+        <ul class="nav">
+          <li><a href="./contact-us.html">Contact</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./shops.html">Shops</a></li>
+          <li><a href="./index.html"><span class="icon-home"> Home</span></a></li>
+        </ul>
+      </section>
+
+    </header>
+
+
+    <!----------MENU---------->
+    <aside class="menu ex3">
+      <h3 id="pro-head">All products</h3>
+      <nav class="category">
+
+        <ul>
+          <li class="space"><a href="#" class=" space icon-pacman"> Meat & Fish</a></li>
+          <li class="space"><a href="#" class="space icon-appleinc"> Fruits</a></li>
+          <li class="space"><a href="#" class="icon-leaf"> Vegetabels</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Bread</a></li>
+          <li class="space"><a href="#" class="icon-pacman"> Candies</a></li>
+          <li class="space"><a href="#" class="icon-glass2"> Drinks</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Sweet</a></li>
+          <li class="space"><a href="#" class="icon-home"> Household</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Shisha</a></li>
+          <li class="space"><a href="#" class="icon-ticket"> Rice</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Dry Fruits</a></li>
+          <li class="space"><a href="#" class="icon-spoon-knife"> Dishes</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Kitchen</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Frozen Food</a></li>
+          <li class="space"><a href="#" class="icon-glass2"> Drinks</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Sweet</a></li>
+          <li class="space"><a href="#" class="icon-ticket"> Beverage</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Rice</a></li>
+        </ul>
       </nav>
 
-    </div>
-    <!---------------HEADER END--------------->
-    <section class="box">
-      <hr>
-      <hr>
-
-      <div class="container">
-        <form action="action_page.php">
-          <h1>Please contact us if you have any thing in your mind!</h1>
-          <p>We will be very happy to make our things better and your idea for sure make us improve.No question is
-            stupid
-          </p>
-          <label for="fname">Name</label>
-          <input type="text" name="name" placeholder="Your name..">
-          
-          <label for="eaddress">Email address</label>
-          <input type="text" name="email address" placeholder="Your email address..">
-
-          <label for="lname">Subject</label>
-          <input type="text" name="subject" placeholder="About what..">
-          
-
-          <label for="subject">Comment</label>
-          <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-          <input type="submit" value="Submit">
-          <br>
+    </aside>
 
 
-        </form>
-      </div>
+    <main class="main-content">
 
-    </section>
+      <!----------------MEAT--------------------------------------->
+      <section class="meat">
+        <div class="padding">
+          <!-- just changed the banner -->
+          <figure><img class="meat-banner" src="./asset/image/contact-us-banner.jpg" alt=""></figure>
+        </div>
+
+      </section>
+
+      <!--------------PRODUCTS------------------------------------->
+      <section class="products">
+
+        <section class="box">
+
+          <div class="container">
+            <form action="action_page.php">
+              <h1>Please contact us if you have any thing in your mind!</h1>
+              <p>We will be very happy to make our things better and your idea for sure make us improve.No question is
+                stupid
+              </p>
+              <label for="fname">Name</label>
+              <input type="text" name="name" placeholder="Your name..">
+
+              <label for="eaddress">Email address</label>
+              <input type="text" name="email address" placeholder="Your email address..">
+
+              <label for="lname">Subject</label>
+              <input type="text" name="subject" placeholder="About what..">
+
+
+              <label for="subject">Comment</label>
+              <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+              <br>
+
+
+            </form>
+          </div>
+
+        </section>
+
+
+      </section>
+
+    </main>
 
     <!--------------------------Footer------------------------------------->
-    <div class="footer">
+    <footer class="footer">
 
-      <div class="media-icon">
-        <div class="icon-wrap"><a href="https://www.facebook.com/"><i class="icon-facebook icon"></i></a></div>
-        <div class="icon-wrap"><a href="https://www.whatsapp.com/"><i class="icon-whatsApp icon"></i></a></div>
-        <div class="icon-wrap"><a href="https://www.instagram.com/"><i class="icon-instagram icon"></i></a></div>
-        <div class="icon-wrap"><a href="https://twitter.com/login?lang=en"><i class="icon-twitter icon"></i></a></div>
-        <div class="icon-wrap"><a href="https://accounts.google.com"><i class="icon-Email icon"></i></a></div>
-      </div>
+      <section class="media-icon">
+        <figure class="icon-wrap"><a href="https://www.facebook.com/"><i class="icon-facebook1 icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://www.whatsapp.com/"><i class="icon-whatsApp icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://www.instagram.com/"><i class="icon-instagram icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://twitter.com/login?lang=en"><i class="icon-twitter icon"></i></a>
+        </figure>
+        <figure class="icon-wrap"><a href="https://accounts.google.com"><i class="icon-Email icon"></i></a></figure>
+      </section>
 
-      <div class="ft-text">
+      <section class="ft-text">
         <h4>Thanks for visiting our website! For positive idea we will be glad</h4>
         <p>&copy;2019 by Ali Janan | All right reserved</p>
-      </div>
-    </div>
+      </section>
+    </footer>
 
 
   </div>
   <!--GRID CONTAINER END-->
+
+
   <!-------------------------------JAVASCRIPT START--------------------------------------->
+  <script src="./asset/js/jquery-3.4.1.slim.min.js"></script>
   <script src="./asset/js/index.js"></script>
+
   <!-------------------------------JAVASRICPT END----------------------------------------->
+
 </body>
 
 </html>
