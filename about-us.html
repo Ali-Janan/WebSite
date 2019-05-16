@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Herat Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="./asset/css/index.css">
+  <!--Google fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Icomoon Link -->
+  <link rel="stylesheet" href="./asset/icomoon/style.css">
+  <!-- faveicon -->
+  <link rel="shortcut icon" type="image/png" href="./asset/image/panda.png" />
+</head>
+<!--------------------------------Body----------------------------------------------->
+
+<body>
+
+  <div class="grid-container">
+
+    <!-----------HEADER-------------------->
+    <header class="header">
+
+      <!-- TOP ROW -->
+      <section class="top-row">
+        <!-- The form -->
+        <figure class="logo">
+          <img src="./asset/image/panda.png" alt="logo">
+        </figure>
+        <!-- <div style="width: 100px"></div> -->
+        <form class="search">
+          <input class="search-frame" id="myInput" onkeyup="searchFunction()" type="text" placeholder=" Search.."
+            name="search">
+        </form>
+
+        <nav class="list-container">
+          <ul>
+            <li class="list" <a href=""><span class="icon-shopping-basket"> My lists</span></a></li>
+            <li class="log" <a href=""><span class="icon-profile"> Login</span></a></li>
+            <li class="lan" <a href=""><span>EN</span></a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Bottom ROW -->
+      <section class="bottom-row">
+        <span class="icon-menu"></span>
+        <ul class="nav">
+          <li><a href="./contact-us.html">Contact</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./shops.html">Shops</a></li>
+          <li><a href="./index.html"><span class="icon-home"> Home</span></a></li>
+        </ul>
+      </section>
+
+    </header>
+
+
+    <!----------MENU---------->
+    <aside class="menu ex3">
+      <h3 id="pro-head">All products</h3>
+      <nav class="category">
+
+        <ul>
+          <li class="space"><a href="#" class=" space icon-pacman"> Meat & Fish</a></li>
+          <li class="space"><a href="#" class="space icon-appleinc"> Fruits</a></li>
+          <li class="space"><a href="#" class="icon-leaf"> Vegetabels</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Bread</a></li>
+          <li class="space"><a href="#" class="icon-pacman"> Candies</a></li>
+          <li class="space"><a href="#" class="icon-glass2"> Drinks</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Sweet</a></li>
+          <li class="space"><a href="#" class="icon-home"> Household</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Shisha</a></li>
+          <li class="space"><a href="#" class="icon-ticket"> Rice</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Dry Fruits</a></li>
+          <li class="space"><a href="#" class="icon-spoon-knife"> Dishes</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Kitchen</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Frozen Food</a></li>
+          <li class="space"><a href="#" class="icon-glass2"> Drinks</a></li>
+          <li class="space"><a href="#" class="icon-pushpin"> Sweet</a></li>
+          <li class="space"><a href="#" class="icon-ticket"> Beverage</a></li>
+          <li class="space"><a href="#" class="icon-gift"> Rice</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+      <!----------------MEAT--------------------------------------->
+      <section class="meat">
+        <div class="padding">
+          <!-- All are the same as index but the background phot is changed -->
+          <figure><img class="meat-banner" src="./asset/image/About-Us-banner.png" alt=""></figure>
+        </div>
+
+      </section>
+
+      <!--------------PRODUCTS------------------------------------->
+      <section class="products">
+
+        <!-- This part is only changed  -->
+        <div id="text-about" class="main-content" id="main-content-2" id="text-about">
+          <h1 id="header-all">Herat shop is the first Afghan shop in Switzerland</h1>
+          <br>
+          
+          <p>هرات شاپ یک فروشگاه مواد غذایی و کالای اساسی در کشور سوئیس است که با افتخار بهترین محصولات افغانستانی و ایرانی را در سه شعبه فعال در شهرهای برن ، سیون و ویپس را به همشهریان عزیز ارائه می نماید .!</p>
+          <br>
+          
+        </div>
+
+      </section>
+
+    </main>
+
+    <!--------------------------Footer------------------------------------->
+    <footer class="footer">
+
+      <section class="media-icon">
+        <figure class="icon-wrap"><a href="https://www.facebook.com/"><i class="icon-facebook1 icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://www.whatsapp.com/"><i class="icon-whatsApp icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://www.instagram.com/"><i class="icon-instagram icon"></i></a></figure>
+        <figure class="icon-wrap"><a href="https://twitter.com/login?lang=en"><i class="icon-twitter icon"></i></a>
+        </figure>
+        <figure class="icon-wrap"><a href="https://accounts.google.com"><i class="icon-Email icon"></i></a></figure>
+      </section>
+
+      <section class="ft-text">
+        <h4>Thanks for visiting our website! For positive idea we will be glad</h4>
+        <p>&copy;2019 by Ali Janan | All right reserved</p>
+      </section>
+    </footer>
+
+
+  </div>
+  <!--GRID CONTAINER END-->
+
+
+  <!-------------------------------JAVASCRIPT START--------------------------------------->
+  <script src="./asset/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="./asset/js/index.js"></script>
+
+  <!-------------------------------JAVASRICPT END----------------------------------------->
+
+</body>
+
+</html>
