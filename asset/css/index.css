@@ -160,7 +160,9 @@
   }
   .search {
     display: block;
-    width: 20%;
+  }
+  .search-frame {
+    border-radius: 25px;
   }
   .list-container {
     width: 50%;
@@ -525,52 +527,44 @@
      /* -----------header------------ */
      #shop-header {
       top: 0;
-      z-index: 10;
-      opacity: 0.5;
+      z-index: 100;
     }
-         /* -----------banner------------ */
-    .banner-swiper {
-      height: 100%;
+    #main-content-2 {
+      margin-left: 0px;
     }
-    .swiper-container {
-      width: 100%;
-      height: 90%;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      margin-top: 80px;
-    }
-    /* -----------main-content------------ */
-    .main-content {
-      
-    }
-
     .second-row {
       display: flex;
+      flex-flow: row;
       justify-content: space-around; 
-      margin-bottom: 50px;
     }
-
     #header-all {
       display: block;
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -60px;
+      padding-top: 0px;
       background-color: green;
       text-align: center;
       color: white;
-      margin-left: 80px;
-      margin-right: 80px;
     }
     .bern {
-      outline: 1px lightgray solid;
       width: 30%;
-      
+      background-color: white;
+      border: 1px lightgray solid;
+      border-radius: 10%;
+      margin: 20px auto;
     }
     .basel {
-      outline: 1px lightgray solid;
       width: 30%;
+      background-color: white;
+      border: 1px lightgray solid;
+      border-radius: 10%;
+      margin: 20px auto;
     }
     .zurich {
-      outline: 1px lightgray solid;
       width: 30%;
+      background-color: white;
+      border: 1px lightgray solid;
+      border-radius: 10%;
+      margin: 20px auto;
     }
