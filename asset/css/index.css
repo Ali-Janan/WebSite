@@ -118,7 +118,7 @@
     display: grid;
     grid-template-areas:
     'header header header header header header'
-    'menu meat meat meat meat meat'
+    'menu banner banner banner banner banner'
     'menu products products products products products'
     'footer footer footer footer footer footer';
     grid-gap: 0px;
@@ -210,23 +210,26 @@
     color: black;
     border-bottom: 5px green solid;
   }
-/* for hiden icon */
+  .nav a.active-page {
+    color: red;
+    border-bottom: 5px red solid;
+  }
+/* for hiden icon in normal view, show only in responsive*/
   .nav-open {
     display: block;
     text-align: center;
-
   }
   .nav.nav-open{
-    background: black;
+    background: yellowgreen;
     color: white;
-    height: 100vh;
+    height: 30vh;
+
   }
 
   .na v.nav-open li {
     padding: 2em 0;
-  }
- 
 
+  }
   .icon-menu {
     display: none;
   }
@@ -268,6 +271,9 @@
     max-height: 470px;
     overflow: auto;
   }
+  .aside-open {
+    display: block;
+  }
   #pro-head {
     color: #4ca828;
     border-bottom: 1px lightgray solid;
@@ -282,6 +288,15 @@
     border-bottom: 1px #FEFEFE solid;
    
   }
+  /* for icon which is hiden in normal */
+  #menu-products {
+    display: none;
+    position: absolute;
+    font-size: 3em;
+    left: 80px;
+    top: 50px;
+    z-index: 1000;
+  }
   /*
   ----------------MENU END------------------*/
   /*
@@ -291,9 +306,9 @@
     margin-left: 240px;
   }
   /*
-  ----------------MEAT------------------*/
-  .meat { 
-    grid-area: meat;
+  --------------BANNER------------------*/
+  .banner { 
+    grid-area: banner;
     background-color: #F7F7F7;
     border-bottom: 1px lightgray solid;
   }
@@ -505,15 +520,35 @@
     display: block;
     position: absolute;
     font-size: 3em;
-    top: 0;
+    bottom: 0;
     right: 0;
     z-index: 1000;
   }
- 
+  .nav a.active-page {
+    color: inherit;
+    border-bottom: none
+  }
+  .nav a:hover {
+    color: black;
+    border-bottom: none;
+  }
+  #menu-products {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .main-content, .footer {
+    width: 100vw;
+    margin-left: 0px;
+  }
+
   }
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .body {
+  body {
     background-color: yellow;
   }
 
@@ -625,3 +660,17 @@
       font-size: 22px;
       /* padding-top: 20px; */
     }
+
+    /* ------------------------------------ */
+    .badge-notify {
+      background:red;
+      position:relative;
+      top: -20px;
+      right: 10px;
+    } 
+
+    .my-cart-icon-affix {
+      position: fixed;
+      z-index: 999;
+      /* background-color: #1da1f2; */
+    } 
