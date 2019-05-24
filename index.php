@@ -146,8 +146,8 @@ $pageContent = file_get_contents('html/' . $pageName . '.html');
     <!-- FOOTER START -->
     <footer class="footer">
     
-      <section class="media-icon">
-        <ul>
+      <section>
+        <ul class="media-icon">
           <li><a href="https://www.facebook.com/" class="icon-facebook1"></a></li>
           <li><a href="https://www.instagram.com/" class="icon-instagram"></a></li>
           <li><a href="https://twitter.com/login?lang=en" class="icon-twitter"></a></li>
