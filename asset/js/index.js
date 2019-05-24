@@ -91,7 +91,7 @@ $(document).ready(function () {
   3
   });
 
-// -----------------------------------------------------
+// -----------------------bootstrap function------------------------------
 $(function () {
 
   var goToCartIcon = function($addTocartBtn){
@@ -100,7 +100,8 @@ $(function () {
     $addTocartBtn.prepend($image);
     var position = $cartIcon.position();
     $image.animate({
-      top: position.top,
+      // i changed (top: position.top) to buttom so it does not show animation 
+      top: position.button,
       left: position.left
     }, 500 , "linear", function() {
       $image.remove();
