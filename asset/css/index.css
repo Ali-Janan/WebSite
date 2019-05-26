@@ -402,7 +402,23 @@ ul {
   grid-area: asian;
   background-color: #F7F7F7;
   border-bottom: 1px lightgray solid;
-  height: 500px;
+  /* height: 500px; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.cont {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.asian-img {
+  width: 250px;
+  height: 150px;
+  border: 1px lightgray solid;
+  border-radius: 2%;
+  
 }
 /* ASIAN END */
 
@@ -419,7 +435,7 @@ ul {
   font-size: 2em;
   width: 100%;
   padding: 5px;
-  background-color: red;
+  justify-content: space-between;
 }
 .ft-text {
   text-align: center;
