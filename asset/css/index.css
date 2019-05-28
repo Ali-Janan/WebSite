@@ -133,11 +133,10 @@ ul {
   padding-top: 10px;
   font-size: 20px;
 }
-.search {
-  display: block;
-}
 .search-frame {
-  border-radius: 25px;
+  border-radius: 5em !important;
+  background-color: #EFEFEF;
+  border: 0px lightgray solid !important;
 }
 .list-container {
   width: 50%;
@@ -196,6 +195,7 @@ ul {
   display: none;
 }
 /* HEADER END */
+
 
 /* SIDE NAV START*/
 .menu {
@@ -256,6 +256,10 @@ ul {
 /* SIDE NAV END */
 
 
+/* SIDE NAV END */
+.main-content {
+   background-color: #F7F7F7;
+}
 /* MAIN CONTENT START (BANNER & ...*/
 .main-content {
   margin-top: 85px;
@@ -265,11 +269,10 @@ ul {
 /* BANNER-1 START*/
 .banner-1 { 
   grid-area: banner-1;
-  background-color: #F7F7F7;
-  border-bottom: 1px lightgray solid;
 }
 .meat-banner {
-  border-radius: 1%;   
+  border-radius: 1%;
+  border: 1px #D8D8D8 solid;   
 }
 /* BANNER-1 END */
 
@@ -277,8 +280,6 @@ ul {
 /* PRODUCTS START*/
 .products { 
   grid-area: products;
-  background-color: #F7F7F7;
-  border-bottom: 1px lightgray solid;
   padding-top: 0;
 }
 .text-head {
@@ -300,6 +301,7 @@ ul {
   background-color: white;
   border-radius: 10px;
   margin: 5px 5px;
+  border: 1px #D8D8D8 solid;
   
 }
 .itmes img {
@@ -364,11 +366,12 @@ ul {
   margin-left: 5px;
 }
 #readMoreBtn {
-  /* background-color: red; */
-  border-radius: 5em;
+  border-radius: 1em;
   position: relative;
   left: 15px;
   bottom: 37px;
+  background-color: #4ca828;
+  color: white;
 }
 /* display more which is in normal hiden*/
 #more {
@@ -392,11 +395,11 @@ ul {
 /* BANNER-2 START*/
 .banner-2 { 
   grid-area: banner-2;
-  background-color: #F7F7F7;
-  border-bottom: 1px lightgray solid;
 }
 .meat-banner {
-  border-radius: 1%;   
+  border-radius: 1%; 
+  border: 1px #D8D8D8 solid;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.15);  
 }
 /* BANNER-2 END */
 
@@ -404,8 +407,6 @@ ul {
 /* ASIAN START */
 .asian { 
   grid-area: asian;
-  background-color: #F7F7F7;
-  border-bottom: 1px lightgray solid;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -417,9 +418,9 @@ ul {
   padding-bottom: 50px;
 }
 .asian-img {
-  width: 250px;
-  height: 150px;
-  border: 1px lightgray solid;
+  width: 275px;
+  height: 170px;
+  border: 1px #D8D8D8 solid;
   border-radius: 2%;
 }
 /* ASIAN END */
@@ -428,16 +429,19 @@ ul {
 /* FOOTER START */
 .footer { 
   grid-area: footer; 
-  background-image: linear-gradient(silver, white);
+  background-image: linear-gradient(white, silver);
   justify-content: space-between;
-  border-top: 1px gray solid;
   margin-left: 240px;
 }
 .media-icon {
+  display: flex;
   font-size: 2em;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-between;
+}
+.media-icon a:hover {
+  
 }
 .ft-text {
   text-align: center;
