@@ -278,33 +278,29 @@ ul {
 .products { 
   grid-area: products;
   background-color: #F7F7F7;
-  align-content: center;
   border-bottom: 1px lightgray solid;
+  padding-top: 0;
 }
-.head-text {
-  display: block;
-  background-image: linear-gradient(green, green);
-  margin: 30px;
-  color: white;
-  margin-top: 15px;
+.text-head {
+  margin-top: 0px;
+  padding-left: 15px;
 }
-.container {
+.containers {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 40px;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-bottom: 35px;
+  padding-left: 10px;
 }
 .itmes {
   position: relative;
-  margin-left: 10px;
   height: 190px;
   width: 125px;
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin: 5px 5px;
+  
 }
 .itmes img {
   cursor: pointer; 
@@ -367,6 +363,14 @@ ul {
   font-size: 8px;
   margin-left: 5px;
 }
+#readMoreBtn {
+  /* background-color: red; */
+  border-radius: 5em;
+  position: relative;
+  left: 15px;
+  bottom: 37px;
+}
+/* display more which is in normal hiden*/
 #more {
   display: none;
 }
@@ -402,7 +406,6 @@ ul {
   grid-area: asian;
   background-color: #F7F7F7;
   border-bottom: 1px lightgray solid;
-  /* height: 500px; */
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -418,7 +421,6 @@ ul {
   height: 150px;
   border: 1px lightgray solid;
   border-radius: 2%;
-  
 }
 /* ASIAN END */
 
